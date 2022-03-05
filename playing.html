@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscia!</title>
+    <link rel="stylesheet" href="/style/Style.css">
+    <link rel="stylesheet" href="/style/icons.css">
+    <link rel="icon" type="image/x-icon" href="/imgs/Favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="body flex ">
+        <div class="leftsidebar w-56 h-screen bg-gray-100 flex flex-col ">
+            <div class="dabba p-1 px-2 mb-5">
+                <div class="h-11 w-full  flex  items-center ">
+                    <span class="cursor-default"> Library </span>
+                </div>
+                <div
+                    class="hover:bg-gray-200 svgBlue hover:rounded-lg active:bg-gray-300 h-11 w-full px-4 flex justify-start items-center cursor-pointer">
+                    <span class="icon mx-2"><img src="/imgs/Icons/graphic_eq_black_24dp.svg" alt=""></span>
+                    <span class=""> Songs </span>
+                </div>
+                <div
+                    class="hover:bg-gray-200 svgBlue hover:rounded-lg active:bg-gray-300 h-11 w-full px-4 flex justify-start items-center cursor-pointer">
+                    <span class="icon mx-2"><img src="/imgs/Icons/headset_black_24dp.svg" alt=""></span>
+                    <span class=""> Playlist </span>
+                </div>
+                <div
+                    class="hover:bg-gray-200 svgBlue hover:rounded-lg active:bg-gray-300 h-11 w-full px-4 flex justify-start items-center cursor-pointer">
+                    <span class="icon mx-2 "><img src="/imgs/Icons/people_black_24dp.svg" alt=""></span>
+                    <span class=""> Artists </span>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+        <div
+            class="midCont h-screen w-[69%] flex flex-col overflow-x-hidden scrollbar-none p-2 bg-slate-200 hover:bg-slate-300 transition-05s">
+            <div class="player  h-screen flex flex-col items-center">
+                <div class="musicimg m-2 my-3"><img class="h-[450px]" src="/imgs/Asalme.jpg" alt=""></div>
+                <div class="w-fill flex flex-col justify-start">
+                    <div class="musicname p-1 px-2">
+                        <span class="font-BalooBhai text-xl font-semibold text-black">Asal Mein <br></span>
+                        <span class="font-BalooBhai text-md text-black">Darshan Raval &bull; 2020</span>
+                    </div>
+                    <div class="duline flex justify-center items-center">
+                        <div id="currenttime" class="duration mx-2">0:00</div>
+
+                        <div class=" h-1 w-11/12 bg-slate-700" id="seekCont">
+                            <!-- <input class="bar bg-stone-600" type="range" name="" id="pr"> -->
+                            <div class="seekbar bg-red-600 w-1/2 h-1 hover:h-[5px]" id="seekred"></div>
+                        </div>
+                        <div id="duration" class="duration mx-2">4:00</div>
+                    </div>
+                    <div class="playercontroller flex flex-row h-10 justify-between mx-2 my-4">
+                        <div class="controller  flex flex-row h-10 w-28 mx-2 ">
+                        <div class="previousSong">
+                            <span class="material-icons md-36 cursor-pointer mx-1">
+                                skip_previous
+                            </span>
+                        </div>
+                        <div class="playbtn">
+                            <span onclick="Player()" id="playbtn" class="material-icons md-36 cursor-pointer mx-1">
+                                play_arrow
+                            </span>
+                        </div>
+                        <div class="nextSong">
+                            <span class="material-icons md-36 cursor-pointer mx-1">
+                                skip_next
+                            </span>
+                        </div>
+                        </div>
+
+                        <div class="options mx-3 flex justify-evenly">
+                            <div class="like">
+                                <span class="material-icons md-36 cursor-pointer mx-1">
+                                    favorite_border
+                                    </span>
+
+                            </div>
+                            <div class="three_dots">
+                                <span class="material-icons md-36 cursor-pointer mx-1">
+                                    more_vert
+                                    </span>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='//pl16876501.effectivecpmcontent.com/f0/c3/8b/f0c38b296e99b49203337a826ca24ab2.js'></script>
+    <script src="/javascript/playerController.js"></script>
+</body>
+
+</html>
